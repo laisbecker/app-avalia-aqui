@@ -22,12 +22,12 @@ export default function App() {
                     <Stack.Screen
                         name="Products"
                         component={Products}
-                        options={{ headerShown: false }}
+                        options={{ headerTitle: 'Listagem dos produtos', headerBackTitle: '' }}
                     />
                     <Stack.Screen
                         name="Evaluations"
                         component={Evaluations}
-                        options={{ headerShown: false }}
+                        options={{ headerTitle: 'Avaliações', headerBackTitle: 'Voltar'}}
                     />
                 </Stack.Navigator>
             </NavigationContainer>
