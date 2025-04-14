@@ -1,16 +1,17 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import { RootStackParamList } from "./src/@types/navigation";
 import { SafeAreaView } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import Intro from "./src/screens/Intro";
 import Products from "./src/screens/Product";
 import Evaluations from "./src/screens/Evaluation";
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator<RootStackParamList>();
 
 export default function App() {
     return (
-        <SafeAreaView style={{ flex: 1 }}>
+        <SafeAreaView style={{ flex: 1, backgroundColor: '#fff', padding: 20 }}>
             <StatusBar backgroundColor="#fff"/>
             <NavigationContainer>
                 <Stack.Navigator initialRouteName="Intro">

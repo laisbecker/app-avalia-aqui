@@ -67,7 +67,7 @@ export default function Products({ navigation }: any) {
                     <Text style={styles.price}>{item.price}</Text>
                     <TouchableOpacity
                         style={styles.button}
-                        onPress={() => navigation.navigate("Evaluations")}
+                        onPress={() => navigation.navigate("Evaluations", {productId: item.id})}
                     >
                         <Text style={styles.buttonText}>Avaliar</Text>
                     </TouchableOpacity>
