@@ -37,12 +37,12 @@ export default function Evaluations({ route, navigation }: Props) {
             {
                 id: "3",
                 label: "Bom",
-                value: "Good",
+                value: "good",
             },
             {
                 id: "4",
                 label: "Excelente",
-                value: "Excellent",
+                value: "excellent",
             },
         ],
         []
